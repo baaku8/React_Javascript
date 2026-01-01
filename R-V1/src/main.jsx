@@ -1,10 +1,16 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
 import App from './App.jsx'
+import Baaku from './Baaku.jsx'
+
+// createRoot(document.getElementById('root')).render(
+//     <App />      // its mandatory to just return a single component here so we use , <></> to give chkma
+                   // also sb function ka naam capital letter se shuru hona mandatory hae  .. here function====component.
+// )
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  <>
+    <Baaku/>
     <App />
-  </StrictMode>,
+  </>
 )
